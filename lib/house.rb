@@ -21,4 +21,10 @@ class House
     end
   end
 
+  def area
+    rooms.reduce(0) do |sum, room|
+      sum + room.area
+    end
+  end
+
 end
