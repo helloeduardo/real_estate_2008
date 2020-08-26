@@ -27,4 +27,11 @@ class House
     end
   end
 
+  def details
+    info = {}
+    info["price"] = price
+    info["address"] = address
+    info
+  end
+
 end
